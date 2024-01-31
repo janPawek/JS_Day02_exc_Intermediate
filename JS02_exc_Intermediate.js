@@ -27,4 +27,41 @@ const capitalizeFirstLetter = function(str) {
   
   console.log(result);
 //   In this example, the capitalizeFirstLetter function is assigned to a variable as an anonymous function. It uses the charAt(0) method to get the first letter of the string, converts it to uppercase using toUpperCase(), and then concatenates it with the rest of the string using slice(1). The example usage demonstrates how to use the function with a specific string and prints the result to the console.
+//   -------------------------------------
+
+// JavaScript Day 02 Excercises: Intermediate: 2. Average Grade : Make a function that will accept 3 parameters, which are the grades from Math, Physics and English. then make the calculation and print them on the screen. Make sure that the variables are numbers.
+
+// E.g. If you put the following grades 3, 4, 5 the result should be:
+
+// Sum:12
+
+// Average: 4
+// filename: calculateGrades.js
+
+// Write a function called calculateGrades
+function calculateGrades(math, physics, english) {
+    // Check if the provided grades are valid numbers
+    if (typeof math === 'number' && typeof physics === 'number' && typeof english === 'number') {
+      // Calculate the sum and average of the grades
+      const sum = math + physics + english;
+      const average = sum / 3;
   
+      // Print the results
+      console.log(`Sum: ${sum}`);
+      console.log(`Average: ${average}`);
+    } else {
+      // Print an error message if any of the grades is not a valid number
+      console.log('Invalid input. Please provide valid numeric grades.');
+    }
+  }
+  
+  // Example usage
+  const mathGrade = 3;
+  const physicsGrade = 4;
+  const englishGrade = 5;
+  
+  calculateGrades(mathGrade, physicsGrade, englishGrade);
+//   In this example, the calculateGrades function takes three parameters (math, physics, and english), checks if they are valid numbers, calculates the sum and average, and prints the results. The example usage demonstrates how to use the function with specific grades and prints the calculated sum and average to the console.
+  
+// -----------------------------------------
+
